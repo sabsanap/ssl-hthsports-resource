@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>华体会 · 阅读与探索</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            background: #f2f2f0;
+            font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            color: #1e1e1e;
+            line-height: 1.7;
+            padding: 2rem 1rem;
+        }
+        .page {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: #fafaf9;
+            border-radius: 28px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.05), 0 1px 2px rgba(0,0,0,0.04);
+            padding: 2rem 1.8rem 3rem;
+        }
+        .hero {
+            position: relative;
+            padding: 3rem 1.5rem 2.5rem;
+            background: #eef1ee;
+            border-radius: 24px;
+            margin-bottom: 2.6rem;
+            border: 1px solid #d8ddd8;
+            box-shadow: inset 0 1px 0 #fff, 0 4px 10px rgba(0,0,0,0.02);
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            font-weight: 400;
+            letter-spacing: 0.02em;
+            color: #1e3b2e;
+            margin-bottom: 0.4rem;
+        }
+        .hero .sub {
+            font-size: 1rem;
+            color: #3e5e4e;
+            border-left: 4px solid #7fa88c;
+            padding-left: 1rem;
+            margin-top: 0.5rem;
+            font-weight: 350;
+        }
+        .section-card {
+            background: #ffffff;
+            border-radius: 20px;
+            padding: 1.8rem 2rem;
+            margin-bottom: 2rem;
+            border: 1px solid #e3e3e1;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.02), 0 0 0 1px rgba(0,0,0,0.01);
+            transition: box-shadow 0.2s;
+        }
+        .section-card:hover {
+            box-shadow: 0 6px 14px rgba(0,0,0,0.04), 0 0 0 1px #d0d5cf;
+        }
+        .section-card h2 {
+            font-size: 1.4rem;
+            font-weight: 450;
+            color: #1e3b2e;
+            border-bottom: 1px solid #eaeae8;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+            letter-spacing: 0.01em;
+        }
+        .section-card p {
+            margin-bottom: 1rem;
+            font-weight: 350;
+            color: #2d2d2d;
+        }
+        .section-card p:last-child {
+            margin-bottom: 0;
+        }
+        .accent-link {
+            color: #2c6b48;
+            text-decoration: none;
+            border-bottom: 1px solid #b8cfc0;
+            font-weight: 400;
+            transition: border-color 0.2s, color 0.2s;
+        }
+        .accent-link:hover {
+            color: #1a4a2f;
+            border-bottom-color: #2c6b48;
+        }
+        .note-box {
+            background: #f6f7f4;
+            border-radius: 14px;
+            padding: 1.2rem 1.5rem;
+            margin-top: 1.2rem;
+            border-left: 4px solid #9fb8a6;
+            font-size: 0.96rem;
+            color: #2e3b33;
+        }
+        .discovery-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.4rem;
+            margin: 1.4rem 0 0.6rem;
+        }
+        .discovery-item {
+            flex: 1 1 140px;
+            background: #f7f8f5;
+            border-radius: 14px;
+            padding: 0.8rem 1rem;
+            border: 1px solid #e0e3dd;
+            text-align: center;
+            font-size: 0.95rem;
+            color: #2b4235;
+        }
+        .discovery-item span {
+            display: block;
+            font-size: 1.6rem;
+            margin-bottom: 0.2rem;
+            opacity: 0.7;
+        }
+        .footer-note {
+            margin-top: 2.5rem;
+            padding-top: 1.8rem;
+            border-top: 1px solid #e0e0de;
+            text-align: center;
+            font-size: 0.95rem;
+            color: #4b5a51;
+        }
+        .footer-note p {
+            margin-bottom: 0.5rem;
+        }
+        .footer-note .reminder {
+            background: #eef2ec;
+            display: inline-block;
+            padding: 0.4rem 1.8rem;
+            border-radius: 40px;
+            font-size: 0.9rem;
+            border: 1px solid #d0d8cf;
+            color: #294936;
+        }
+
+        @media (max-width: 600px) {
+            body { padding: 1rem 0.6rem; }
+            .page { padding: 1.2rem 1rem 2rem; }
+            .hero { padding: 2rem 1.2rem; }
+            .hero h1 { font-size: 2rem; }
+            .section-card { padding: 1.4rem 1.2rem; }
+            .discovery-grid { gap: 0.8rem; }
+        }
+    </style>
+</head>
+<body>
+<div class="page">
+    <!-- hero 横幅 -->
+    <div class="hero">
+        <h1>华体会 · 一份安静的记录</h1>
+        <div class="sub">再次回来，像是翻开一本有折角的杂志</div>
+    </div>
+
+    <!-- 背景说明 / 再次访问的缘由 -->
+    <div class="section-card">
+        <h2>从某个书签开始</h2>
+        <p>有时候你收藏一个地方，不是因为它的热闹，而是因为它一直就在那里。如果你又一次打开了关于<a href="https://ssl--hthsports.com" class="accent-link">华体会</a>的页面，可能是想看看这段时间有没有新的内容，或者只是顺手点开——这本身就像一种习惯性的注目。互联网里能让人愿意回头再看的角落，其实不太多。</p>
+        <p>这次访问也许没有特别的目的，但页面背后是持续整理和更新的内容板块。从资讯到观察，有些东西值得被反复阅读。</p>
+    </div>
+
+    <!-- 三个自然介绍段落：特点、场景、关注方式 -->
+    <div class="section-card">
+        <h2>内容的特点</h2>
+        <p>相对克制的叙事，较少使用渲染性词汇，更多是平实的梳理。每一期专题或更新都尽量保留信息来源与上下文，不追求短促的冲击力，而是让感兴趣的人能够按自己的节奏了解。无论是赛事观察、活动记录还是背景资料，都经过基本的核实与编排。</p>
+        <p>在信息过载的时期，这种整理反而像是一种筛选——留下的都是经过考虑的。如果你之前已经浏览过<a href="https://ssl--hthsports.com" class="accent-link">华体会</a>的内容，这次或许会发现结构上的调整和新增的条目。</p>
+        <div class="note-box">
+            💡 之前收录的专题仍然保留，同时按季度补充了新的分支话题。更新频率不高，但每次都有实质变动。
+        </div>
+    </div>
+
+    <div class="section-card">
+        <h2>适合什么时候看</h2>
+        <p>不需要特别安排时间。像是在周末下午翻一本杂志，或者在工作间隙点开一个熟悉的标签页。页面没有自动播放、弹窗或强提醒，所以可以安静地往下滚动。如果你习惯用收藏夹整理感兴趣的站点，把<a href="https://ssl--hthsports.com" class="accent-link">华体会</a>加入书签，等下次想换个阅读内容时再打开，会很自然。</p>
+        <div class="discovery-grid">
+            <div class="discovery-item"><span>📘</span> 专题阅读</div>
+            <div class="discovery-item"><span>📋</span> 整理列表</div>
+            <div class="discovery-item"><span>🔍</span> 背景补全</div>
+        </div>
+        <p style="margin-top: 0.8rem;">每个板块都独立成篇，不依赖外部链接跳转。阅读时不用频繁切换窗口，这也是当初设计时的一个考虑。</p>
+    </div>
+
+    <div class="section-card">
+        <h2>持续关注的方式</h2>
+        <p>没有邮件推送，也没有社交媒体的强提醒。最直接的方法就是偶尔回来看看——或者像很多老读者一样，把页面添加到浏览器的书签栏。当你看到书签里那个熟悉的名字，点进去，就是一次重逢。</p>
+        <p>再次推荐直接访问 <a href="https://ssl--hthsports.com" class="accent-link">华体会</a>，那里是内容聚合的原点。所有更新和归档都围绕这个地址展开。不需要注册或登录，打开即读。</p>
+    </div>
+
+    <!-- FAQ 摘要 / 常见小问题 -->
+    <div class="section-card" style="background: #f8f9f6;">
+        <h2>偶尔会有人问</h2>
+        <p><strong>内容会定期更新吗？</strong><br>没有固定周期，但每次更新都会补充新的段落或调整原有的信息结构。偶尔会替换过时的引用。</p>
+        <p><strong>以前看过的内容还找得到吗？</strong><br>可以。页面保留了历史专题的入口，所有曾发布过的内容都在站点内。</p>
+        <p><strong>在手机上浏览体验如何？</strong><br>布局会根据屏幕宽度调整，文字和卡片都适配小屏，阅读时不需要缩放。</p>
+        <p style="margin-top: 0.8rem;">如果你还有其他好奇的地方，不妨直接到站内转转——很多时候答案就在<a href="https://ssl--hthsports.com" class="accent-link">华体会</a>的页面里。</p>
+    </div>
+
+    <!-- 页尾访问提示，保持自然语气 -->
+    <div class="footer-note">
+        <p>这本“杂志”没有最后一页，只有下一个折角。</p>
+        <p class="reminder">📌 书签提示 · 直接输入或点击即可再次阅读</p>
+        <p style="margin-top:0.8rem; font-size:0.85rem; opacity:0.6;">页面内容基于持续整理 · 最近一次结构更新于本季度</p>
+    </div>
+</div>
+</body>
+</html>
